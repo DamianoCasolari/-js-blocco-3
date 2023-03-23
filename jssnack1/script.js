@@ -51,21 +51,13 @@ const cars = [
     },
 ];
 
-const arrayBenzina = cars.filter((car) => {
-return car.fuel == "benzina"
-})
+const arrayBenzina = cars.filter(car =>  car.fuel == "benzina" )
 console.log(arrayBenzina);
 
-const arrayDiesel = cars.filter((car) => {
-return car.fuel == "diesel"
-})
+const arrayDiesel = cars.filter(car =>  car.fuel == "diesel" )
 console.log(arrayDiesel);
 
-const arrayOtherCars = cars.filter((car) => {
-
-    return car.fuel != "diesel" && car.fuel != "benzina"
-
-})
+const arrayOtherCars = cars.filter(car => car.fuel != "diesel" && car.fuel != "benzina")
 console.log(arrayOtherCars);
 
 
