@@ -51,14 +51,22 @@ const cars = [
     },
 ];
 
+
+const col1El = document.querySelector(".col1")
+const col2El = document.querySelector(".col2")
+const col3El = document.querySelector(".col3")
+
 const arrayBenzina = cars.filter(car =>  car.fuel == "benzina" )
 console.log(arrayBenzina);
+col1El.innerHTML = arrayBenzina;
 
 const arrayDiesel = cars.filter(car =>  car.fuel == "diesel" )
 console.log(arrayDiesel);
+col2El.innerHTML = arrayDiesel;
 
 const arrayOtherCars = cars.filter(car => car.fuel != "diesel" && car.fuel != "benzina")
 console.log(arrayOtherCars);
+col3El.innerHTML = arrayOtherCars;
 
 
 
